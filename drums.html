@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="drums.js"></script>
+</head>
+<body>
+
+<div class="container">
+<div class="title">
+Use your number keys to make some noise!
+</div>
+
+<div class="keys">
+    <div data-key="103" data-key2="55" class="key">
+      <kbd>7</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="104" data-key2="56" class="key">
+      <kbd>8</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="105" data-key2="57" class="key">
+      <kbd>9</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+<div class="keys">
+    <div data-key="100" data-key2="52" class="key">
+      <kbd>4</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="101" data-key2="53" class="key">
+      <kbd>5</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="102" data-key2="54" class="key">
+      <kbd>6</kbd>
+      <span class="sound">ride</span>
+    </div>
+  </div>
+
+  <div class="keys">
+    <div data-key="97" data-key2="49" class="key">
+      <kbd>1</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="98" data-key2="50" class="key">
+      <kbd>2</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="99" data-key2="51" class="key">
+      <kbd>3</kbd>
+      <span class="sound">kick</span>
+    </div>
+  </div>
+  
+  
+  <div class="tracker">
+    <div id="input_text"></div>
+  </div>
+  <form>
+        <input type="submit" id="restartBtn" name="restart" value="Restart" onclick="restart" />
+  </form>
+</div>
+
+  <audio data-key="103" data-key2="55" src="sounds/snare.wav"></audio>
+  <audio data-key="104" data-key2="56" src="sounds/tom.wav"></audio>
+  <audio data-key="105" data-key2="57" src="sounds/tink.wav"></audio>
+
+  <audio data-key="100" data-key2="52" src="sounds/openhat.wav"></audio>
+  <audio data-key="101" data-key2="53" src="sounds/boom.wav"></audio>
+  <audio data-key="102" data-key2="54" src="sounds/ride.wav"></audio>
+
+  <audio data-key="97" data-key2="49" src="sounds/clap.wav"></audio>
+  <audio data-key="98" data-key2="50" src="sounds/hihat.wav"></audio>
+  <audio data-key="99" data-key2="51" src="sounds/kick.wav"></audio>
+
+</body>
+</html>
